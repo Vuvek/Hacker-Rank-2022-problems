@@ -17,7 +17,7 @@ dic = sorted(d.items(),key = lambda x:x[0])
 dg1 = list(filter(extractg1,dic))
 d1 = list(filter(extract1,dic))
 d = sorted(dg1 , key=lambda x : x[1],reverse=True)
-print(d,d1,dic)
+# print(d,d1,dic)
 counter = 0
 for key,value in d:
     if counter < 3:

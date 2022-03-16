@@ -33,26 +33,6 @@ if __name__ == '__main__':
 #     print_formatted(n)
 
 
-from re import L
-
-
-def merge_the_tools(string, k):
-    l = len(string)//k
-    j = 0
-    m = k
-    for i in range(l):
-        s = ""
-        
-        u = string[j:m]
-        j = j + k
-        m = m + j
-        for n in u:
-            if n not in s:
-                s += n
-        print(s)
 
 
 
-if __name__ == '__main__':
-    string, k = input(), int(input())
-    merge_the_tools(string, k)
